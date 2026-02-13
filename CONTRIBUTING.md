@@ -1,87 +1,87 @@
-# 貢献ガイドライン
+# Contributing Guidelines
 
-Instapaper Bookmark Organizer への貢献に興味を持っていただき、ありがとうございます！
+Thank you for your interest in contributing to Instapaper Bookmark Organizer!
 
-## 貢献方法
+## How to Contribute
 
-### バグ報告
+### Bug Reports
 
-バグを見つけた場合は、以下の情報を含めて Issue を作成してください：
+If you find a bug, please create an Issue with the following information:
 
-- 問題の簡潔な説明
-- 再現手順
-- 期待される動作
-- 実際の動作
-- 環境情報（Python バージョン、OS など）
+- Brief description of the problem
+- Steps to reproduce
+- Expected behavior
+- Actual behavior
+- Environment information (Python version, OS, etc.)
 
-### 機能リクエスト
+### Feature Requests
 
-新機能の提案は大歓迎です！Issue を作成して、以下を含めてください：
+New feature proposals are welcome! Create an Issue including:
 
-- 機能の説明
-- ユースケース
-- 可能であれば、実装のアイデア
+- Feature description
+- Use cases
+- Implementation ideas, if possible
 
-### プルリクエスト
+### Pull Requests
 
-1. リポジトリをフォーク
-2. 機能ブランチを作成 (`git checkout -b feature/amazing-feature`)
-3. 変更をコミット (`git commit -m 'Add some amazing feature'`)
-4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
-5. プルリクエストを作成
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Create a Pull Request
 
-#### コーディング規約
+#### Coding Conventions
 
-- PEP 8 スタイルガイドに従ってください
-- 型ヒントを使用してください（Python 3.7+）
-- docstring を追加してください
-- 既存のコードスタイルと一貫性を保ってください
+- Follow PEP 8 style guide
+- Use type hints (Python 3.7+)
+- Add docstrings
+- Maintain consistency with existing code style
 
-#### コミットメッセージ
+#### Commit Messages
 
-- 明確で簡潔なメッセージを書いてください
-- 現在形を使用してください（"Add feature" not "Added feature"）
-- 必要に応じて、詳細な説明を含めてください
+- Write clear and concise messages
+- Use present tense ("Add feature" not "Added feature")
+- Include detailed description if necessary
 
-## 開発環境のセットアップ
+## Development Environment Setup
 
 ```bash
-# リポジトリをクローン
+# Clone the repository
 git clone https://github.com/yourusername/instapaper-bookmark-organizer.git
 cd instapaper-bookmark-organizer
 
-# uvのインストール（未インストールの場合）
+# Install uv (if not already installed)
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# 依存関係をインストール
+# Install dependencies
 uv sync
 
-# 開発用の追加パッケージ（オプション）
+# Install development packages (optional)
 uv add --dev black flake8 mypy pytest
 ```
 
-## テスト
+## Testing
 
-変更を加えた場合は、動作確認を行ってください：
+When making changes, please verify functionality:
 
 ```bash
-# 基本的な動作確認
+# Basic functionality check
 uv run python main.py
 
-# コードスタイルチェック（オプション）
+# Code style checks (optional)
 uv run flake8 main.py
 uv run black --check main.py
 uv run mypy main.py
 ```
 
-## 質問
+## Questions
 
-質問がある場合は、遠慮なく Issue を作成してください！
+If you have questions, feel free to create an Issue!
 
-## 行動規範
+## Code of Conduct
 
-- 敬意を持って接してください
-- 建設的なフィードバックを提供してください
-- オープンで包括的なコミュニティを維持しましょう
+- Be respectful
+- Provide constructive feedback
+- Maintain an open and inclusive community
 
-ご協力ありがとうございます！
+Thank you for your cooperation!
